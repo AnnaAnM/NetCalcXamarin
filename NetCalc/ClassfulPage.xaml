@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:NetCalc;assembly=NetCalc"
+             x:Class="NetCalc.ClassfulPage">
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <local:TransformingPicker x:Key="TransformingPicker"/>
+      <local:TransformingSlider x:Key="TransformingSlider"/>
+    </ResourceDictionary>
+  </ContentPage.Resources>
+  <StackLayout x:Name="stackLayout">
+    <Picker x:Name="classPicker"
+            Title="Class of network"/>
+    <Label Text="IP address"/>
+    <Entry x:Name="ipAddressEntry"
+           Keyboard="Numeric"
+           FontSize="Medium"
+           Text="1.0.0.0"/>
+
+    <Label x:Name="maskLabel"
+           FontSize="Medium"/>
+
+    <Label Text="Number of subnets"/>
+    <Label x:Name="numSubnetLabel"/>
+    <Label Text="Number of hosts per subnet"/>
+    <Label x:Name="numHostLabel"/>
+    <Label Text="Subnet ID"/>
+    <Label x:Name="subIdLabel"/>
+    <Label Text="Broadcast address"/>
+    <Label x:Name="brAddLabel"/>
+    <Label Text="Address range"/>
+    <Label x:Name="addRangeLabel"/>
+    <Label Text="Wildcard mask"/>
+    <Label x:Name="wcLabel"/>
+  </StackLayout>
+</ContentPage>

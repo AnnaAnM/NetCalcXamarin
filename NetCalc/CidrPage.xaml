@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NetCalc.CidrPage">
+  <StackLayout>
+    <Label Text="IP address"/>
+    <Entry x:Name="ipAddressEntry"
+           Keyboard="Numeric"
+           FontSize="Medium"
+           Text="1.0.0.0"/>
+    <Picker x:Name="maskPicker"
+            Title="Mask"/>
+    <Label x:Name="maskLabel"/>
+    <Slider x:Name="maskSlider"/>
+    <Label  Text="CIDR Notation"/>
+    <Label x:Name="cidrNotationLabel"/>
+    <Label Text="Wildcard Mask"/>
+    <Label x:Name="wcMaskLabel"/>
+    <Label Text="Address range"/>
+    <Label x:Name="addRangeLabel"/>
+    <Label Text="Maximum number of addresses"/>
+    <Label x:Name="maxAddsLabel"/>
+  </StackLayout>
+</ContentPage>
